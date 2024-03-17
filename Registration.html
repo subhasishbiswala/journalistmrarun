@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="styles3.css" />
+        <script src="submit.js"></script>
+    </head>
+	<body>
+      	<div class="container">
+            <div class="Registrationbox">
+				<!-- <form method="POST" action=""> -->
+				<h2 class="center heading">Welcome to Mr. Arun's Journalism Course</h2>
+				<h1 class="center heading"> REGISTRATION</h1> 
+         <form id="myForm" action="submit.php" method="POST">
+		 <!-- onsubmit="return validateForm()" -->
+           <div class="cent_er">
+		   
+		    <div class="txt_field">
+                <div>
+					<span class="center redText">Profile for<span style="color: red; ">*</span></span>
+					<!-- <input class="lipun" type="number" id="gh"  placeholder="Select profile for"> -->
+					<select class="lipun"  id="gh" name="pro"> 
+                    <option value="" >Select profile for</option> 
+                    <option value="batchelor">batchelor</option>
+                    <option value="students">students</option>
+                    <option value="job holder">job holder</option>
+                    <option value="business">business</option>
+                </select>  
+					<p id="profile" style="color:red;"></p>
+
+					<!-- //innerHTML -->
+				</div>
+
+            </div>
+           
+			<div class="txt_field">
+				<div>
+					<span class="center redText"> Name<span style="color: red;">*</span></span>
+					 <input class="lipun" type="text" id="fname" name="fname" placeholder="Enter your name">
+					 <p id="Name" style="color:red;"></p>
+					<!-- //innerHTML -->
+				 </div>
+				 	</div>
+                
+			<div class="txt_field">
+				<div>
+					<span class="center redText">Date of birth<span style="color: red;">*</span></span>
+					<input class="lipun" type="Date" id="hg" name="ame" placeholder="Enter your Date of birth">
+				 <p id="Date" style="color:red;"></p>
+					<!-- //innerHTML -->
+				</div>
+			</div>
+            <div class="txt_field">
+				<div>
+					<span class="center redText" id="radi">Gender<span style="color: red;">*</span></span>
+			<input class="lipun" type="radio" name="fav_language" id="radio1" value="male" >
+				<label for="html">male</label>
+                <input id="radio2" type="radio" name="fav_language" value="female" >
+                <label for="html">female</label>
+                <input id="radio3" type="radio" name="fav_language" value="other">
+                <label for="html">other</label><br>
+				 <p id="Gender" style="color:red;"></p>
+					<!-- //innerHTML -->
+				</div>
+			</div>
+			<div>
+					<span class="center redText" id="Tounge">Mother Tounge<span style="color: red;">*</span></span>
+					<input class="lipun" type="checkbox" id="box1" value="odia" name= "Tounge[]" >
+					 <!-- <input type="checkbox"> -->
+                <label for="Mother_Tounge1">Odia</label>
+					<input id="box2" type="checkbox" value="english"name= "Tounge[]">
+                <label for="Mother_Tounge2">English</label>
+					<input  id="box3" type="checkbox" value="hindi"name= "Tounge[]">
+                <label for="Mother_Tounge3">Hindi</label>
+				 <p id="Mother" style="color:red;"></p>
+					<!-- //innerHTML -->
+              
+				</div>
+			</div>
+				<div class="txt_field">
+                 
+           <div>
+                  <span class="center redText ">Mobile No.<span style="color: red;">*</span></span>
+				  
+                     <input class="lipun" type="number" id="dd"  name= "No" placeholder="Enter number">
+                <p id="Mobile" style="color:red;"></p>
+					<!-- //innerHTML -->
+				</div>
+				</div>
+				<div class="txt_field">
+                 
+           <div>
+             <span class="center redText">Email ID<span style="color: red;">*</span></span>
+                     <input class="lipun" type="Email" id="aa" name="Ema" placeholder="Enter email">
+                 <p id="Email" style="color:red;"></p>
+					<!-- //innerHTML -->
+				</div>
+				</div>
+				<div class="txt_field">
+                 
+           <div>
+                  <span class="center redText ">password<span style="color: red;">*</span></span>
+                    <input class="lipun" type="password" id="bb"name="sword" placeholder="Enter password">
+ 				 <p id="password" style="color:red;"></p>
+					<!-- //innerHTML -->
+				</div>
+			<div class="txt_field">
+                <div>
+               <span class="center redText ">OPT<span style="color: red;">*</span></span>
+                    <input class="lipun Rama" type="number" id="ff" placeholder="Enter Otp"><button class="Rajesh">GET OTP</button>
+ 			     <p id="OPT" style="color:red;"></p>
+					<!-- //innerHTML -->
+				</div>
+		   </div>
+		   </div>
+				
+				<div class="txt_field">
+				
+              <div class="heading">
+                  
+				  <!-- <button class="submit_link" type="submit">submit</button> -->
+				  <button class="submit_link" type="submit" onclick="return validateForm()">submit</button>
+              </div>
+			<div class="heading">  
+           Already Have an Account ? <a href="signForm.php" >Sign in </a>
+		  
+		  </div>
+		    </div>
+          </div>
+		  <!-- </form> -->
+		  </form>
+        </div>
+		</body>
+</html>
